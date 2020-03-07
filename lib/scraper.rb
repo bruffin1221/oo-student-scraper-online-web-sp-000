@@ -13,6 +13,7 @@ class Scraper
         :name=>student.css("h4.student-name").text,
       :profile_url=>student.css("a").attribute("href").value}
       profiles<<profile
+      binding.pry
     end
     profiles
   end
